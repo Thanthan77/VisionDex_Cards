@@ -12,38 +12,42 @@
   </head>
 
   <body>
-    <div class="card rarity-rare">
+    <div class="card" id="card">
       <div class="card-inner">
+        <!-- HEADER -->
         <div class="card-header">
-          <div class="card-title">Crayon Papier Deluxe</div>
-          <div class="rarity-badge">Rare</div>
+          <div class="card-title" id="card-title">Titre</div>
+          <div class="rarity-badge" id="card-rarity">Rareté</div>
         </div>
 
+        <!-- IMAGE -->
         <div class="card-image-frame">
           <div class="card-image-inner">
-            <div class="emoji">📝</div>
+            <div class="emoji" id="card-emoji">📝</div>
           </div>
         </div>
 
+        <!-- INFO -->
         <div class="info-box">
           <div class="info-row">
             <div class="info-label">Type :</div>
-            <div class="info-value">Objet / Outil</div>
+            <div class="info-value" id="card-type"></div>
           </div>
+
           <div class="info-row">
             <div class="info-label">Attributes :</div>
-            <div class="info-value">wooden, yellow, sharp, lightweight</div>
+            <div class="info-value" id="card-attributes"></div>
           </div>
         </div>
 
+        <!-- DESCRIPTION -->
         <div class="description-box">
           <div class="description-label">Description :</div>
-          <div>
-            Un crayon en bois de haute qualité, utilisé pour écrire, dessiner et
-            esquisser avec précision.
-          </div>
+          <div id="card-description"></div>
         </div>
       </div>
     </div>
+
+    <script src="/js/carte.js"></script>
   </body>
 </html>
