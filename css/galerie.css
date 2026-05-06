@@ -1,0 +1,41 @@
+.dex-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 150px);
+  gap: 15px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+#modal img {
+  width: 400px;
+  border-radius: 15px;
+}

@@ -12,42 +12,47 @@
   </head>
 
   <body>
-    <div class="card" id="card">
-      <div class="card-inner">
-        <!-- HEADER -->
-        <div class="card-header">
-          <div class="card-title" id="card-title">Titre</div>
-          <div class="rarity-badge" id="card-rarity">Rareté</div>
-        </div>
-
-        <!-- IMAGE -->
-        <div class="card-image-frame">
-          <div class="card-image-inner">
-            <div class="emoji" id="card-emoji">📝</div>
-          </div>
-        </div>
-
-        <!-- INFO -->
-        <div class="info-box">
-          <div class="info-row">
-            <div class="info-label">Type :</div>
-            <div class="info-value" id="card-type"></div>
+    <div class="card-container">
+      <div class="card" id="card">
+        <div class="card-inner">
+          <!-- HEADER -->
+          <div class="card-header">
+            <div class="card-title" id="card-title">Titre</div>
+            <div class="rarity-badge" id="card-rarity">Rareté</div>
           </div>
 
-          <div class="info-row">
-            <div class="info-label">Attributes :</div>
-            <div class="info-value" id="card-attributes"></div>
+          <!-- IMAGE -->
+          <div class="card-image-frame">
+            <div class="card-image-inner">
+              <div class="emoji" id="card-emoji"></div>
+            </div>
           </div>
-        </div>
 
-        <!-- DESCRIPTION -->
-        <div class="description-box">
-          <div class="description-label">Description :</div>
-          <div id="card-description"></div>
+          <!-- INFO -->
+          <div class="info-box">
+            <div class="info-row">
+              <div class="info-label">Type :</div>
+              <div class="info-value" id="card-type"></div>
+            </div>
+
+            <div class="info-row">
+              <div class="info-label">Attributes :</div>
+              <div class="info-value" id="card-attributes"></div>
+            </div>
+          </div>
+
+          <!-- DESCRIPTION -->
+          <div class="description-box">
+            <div class="description-label">Description :</div>
+            <div id="card-description"></div>
+          </div>
         </div>
       </div>
+      <button id="add-to-dex" class="add-btn">Ajouter à la galerie</button>
     </div>
+    <div id="toast" class="toast">Carte ajoutée à la galerie !</div>
 
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
     <script src="/js/carte.js"></script>
   </body>
 </html>

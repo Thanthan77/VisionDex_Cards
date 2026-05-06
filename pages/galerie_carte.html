@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VisionDex</title>
+    <link rel="stylesheet" href="/css/galerie.css" />
+  </head>
+  <body>
+    <header class="dex-header">
+      <h1>VisionDex</h1>
+      <p id="dex-count">0 cartes enregistrées</p>
+
+      <input type="text" id="search" placeholder="Rechercher une carte..." />
+
+      <div class="filters">
+        <select id="filter-rarity">
+          <option value="">Toutes les raretés</option>
+          <option value="Commun">Commun</option>
+          <option value="Rare">Rare</option>
+          <option value="Épique">Épique</option>
+          <option value="Légendaire">Légendaire</option>
+        </select>
+      </div>
+    </header>
+
+    <div id="gallery" class="gallery"></div>
+
+    <div id="modal" class="modal hidden">
+      <img id="modal-img" />
+    </div>
+
+    <script src="/js/visiondex.js"></script>
+  </body>
+</html>
