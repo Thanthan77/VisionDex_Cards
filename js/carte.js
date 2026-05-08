@@ -1,16 +1,33 @@
-// Données de la carte (exemple)
-const cardData = {
-  title: "Crayon Papier Deluxe",
-  rarity: "Rare",
-  emoji: "📝",
-  type: "Objet / Outil",
-  attributes: ["wooden", "yellow", "sharp", "lightweight"],
-  description:
-    "Un crayon en bois de haute qualité, utilisé pour écrire, dessiner et esquisser avec précision.",
-  color: "#1e88e5", // couleur du contour + badge
-};
+// Récupérer les données encodées dans l'URL
+const params = new URLSearchParams(window.location.search);
+const encodedData = params.get("data");
 
-// Fonction qui remplit la carte
+//  Si aucune donnée alors fallback vers un exemple
+let cardData;
+
+if (encodedData) {
+  try {
+    cardData = JSON.parse(decodeURIComponent(encodedData));
+  } catch (e) {
+    console.error("Erreur de décodage JSON :", e);
+  }
+}
+
+//  Si rien dans l'URL alors utiliser un exemple (sécurité)
+if (!cardData) {
+  cardData = {
+    title: "Crayon Papier Deluxe",
+    rarity: "Rare",
+    emoji: "📝",
+    type: "Objet / Outil",
+    attributes: ["wooden", "yellow", "sharp", "lightweight"],
+    description:
+      "Un crayon en bois de haute qualité, utilisé pour écrire, dessiner et esquisser avec précision.",
+    color: "#1e88e5",
+  };
+}
+
+//  Fonction qui remplit la carte
 function remplirCarte(data) {
   document.getElementById("card-title").textContent = data.title;
   document.getElementById("card-rarity").textContent = data.rarity;
@@ -23,19 +40,17 @@ function remplirCarte(data) {
   changerCouleurRareté(data.color);
 }
 
-// Fonction pour changer la couleur du contour + badge
+// Couleur selon rareté
 function changerCouleurRareté(couleur) {
   const card = document.querySelector(".card");
-
-  // On applique directement les couleurs utilisées par le nouveau CSS
   card.style.setProperty("--color", couleur);
   card.style.setProperty("--glow", couleur + "55");
 }
 
-// Exécution
+//  Génération automatique de la carte
 remplirCarte(cardData);
 
-// Capture simple (plus besoin de modifier les styles)
+//  Capture et sauvegarde
 document.getElementById("add-to-dex").addEventListener("click", () => {
   const card = document.querySelector(".card");
 
@@ -46,25 +61,29 @@ document.getElementById("add-to-dex").addEventListener("click", () => {
   });
 });
 
+// Sauvegarde dans VisionDex
 function sauvegarderDansDex(imageData) {
   let dex = JSON.parse(localStorage.getItem("visiondex")) || [];
 
   dex.push({
     title: cardData.title,
     rarity: cardData.rarity,
+    type: cardData.type,
+    description: cardData.description,
+    attributes: cardData.attributes,
     image: imageData,
   });
 
   localStorage.setItem("visiondex", JSON.stringify(dex));
 }
 
+//  Toast et redirection
 function showToastThenRedirect() {
   const toast = document.getElementById("toast");
   toast.classList.add("show");
 
-  // Attendre 1.2 seconde puis rediriger
   setTimeout(() => {
     toast.classList.remove("show");
-    window.location.href = "/pages/galerie_carte.html"; // adapte le chemin
+    window.location.href = "/pages/galerie_carte.html";
   }, 1200);
 }
