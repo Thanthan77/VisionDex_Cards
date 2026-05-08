@@ -28,9 +28,9 @@ document.getElementById("generate").addEventListener("click", async () => {
     return;
   }
 
-  // Encodage JSON → URL
+  // Encodage JSON vers URL
   const encoded = encodeURIComponent(JSON.stringify(cardData));
 
   // Redirection vers la page carte
-  window.location.href = "/assets/carte.html?data=" + encoded;
+  window.location.href = "assets/carte.html?data=" + encoded;
 });
