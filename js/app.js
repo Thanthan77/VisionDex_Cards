@@ -32,5 +32,5 @@ document.getElementById("generate").addEventListener("click", async () => {
   const encoded = encodeURIComponent(JSON.stringify(cardData));
 
   // Redirection vers la page carte
-  window.location.href = "carte.html?data=" + encoded;
+  window.location.href = "/assets/carte.html?data=" + encoded;
 });
