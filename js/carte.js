@@ -84,6 +84,6 @@ function showToastThenRedirect() {
 
   setTimeout(() => {
     toast.classList.remove("show");
-    window.location.href = "pages/galerie_carte.html";
+    window.location.href = "../pages/galerie_carte.html";
   }, 1200);
 }
