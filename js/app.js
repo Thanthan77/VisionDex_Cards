@@ -6,7 +6,7 @@ document.getElementById("generate").addEventListener("click", async () => {
   }
 
   // URL de ton Worker Cloudflare
-  const WORKER_URL = "https://orange-forest-580d.ethanqc-chea.workers.dev/";
+  const WORKER_URL = "https://orange-forest-580d.ethanqc-chea.workers.dev";
 
   // Appel au Worker Cloudflare
   const response = await fetch(WORKER_URL, {
