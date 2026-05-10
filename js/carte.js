@@ -18,7 +18,7 @@ if (!cardData) {
   cardData = {
     title: "Crayon Papier Deluxe",
     rarity: "Rare",
-    emoji: "📝",
+    image: "📝",
     type: "Objet / Outil",
     attributes: ["wooden", "yellow", "sharp", "lightweight"],
     description:
@@ -31,7 +31,7 @@ if (!cardData) {
 function remplirCarte(data) {
   document.getElementById("card-title").textContent = data.title;
   document.getElementById("card-rarity").textContent = data.rarity;
-  document.getElementById("card-emoji").textContent = data.emoji;
+  document.getElementById("card-image").textContent = data.image;
   document.getElementById("card-type").textContent = data.type;
   document.getElementById("card-attributes").textContent =
     data.attributes.join(", ");
