@@ -6,22 +6,21 @@
     <title>VisionDex</title>
     <link rel="stylesheet" href="../css/galerie.css" />
   </head>
+
   <body>
     <header class="dex-header">
       <h1>VisionDex</h1>
       <p id="dex-count">0 cartes enregistrées</p>
 
-      <input type="text" id="search" placeholder="Rechercher une carte..." />
+      <input type="text" id="search" class="search-input" placeholder="Rechercher une carte..." />
 
-      <div class="filters">
-        <select id="filter-rarity">
-          <option value="">Toutes les raretés</option>
-          <option value="Commun">Commun</option>
-          <option value="Rare">Rare</option>
-          <option value="Épique">Épique</option>
-          <option value="Légendaire">Légendaire</option>
-        </select>
-      </div>
+      <select id="filter-rarity" class="filter-select">
+        <option value="">Toutes les raretés</option>
+        <option value="Commun">Commun</option>
+        <option value="Rare">Rare</option>
+        <option value="Épique">Épique</option>
+        <option value="Légendaire">Légendaire</option>
+      </select>
     </header>
 
     <div id="gallery" class="gallery"></div>
