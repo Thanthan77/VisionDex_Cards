@@ -68,5 +68,5 @@ visiondex/
 
 | Type               | Lien                                                                 |
 |--------------------|----------------------------------------------------------------------|
-| **Site déployé**   | [[https://thanthan77.github.io/VisionDex_Cards/](https://thanthan77.github.io/VisionDex_Cards/)]  |
+| **Site déployé**   | [https://thanthan77.github.io/VisionDex_Cards/](https://thanthan77.github.io/VisionDex_Cards/)  |
 | **Repository GitHub** | [https://github.com/Thanthan77/VisionDex_Cards](https://github.com/Thanthan77/VisionDex_Cards) |
