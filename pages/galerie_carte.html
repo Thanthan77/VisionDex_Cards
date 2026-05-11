@@ -11,16 +11,22 @@
     <header class="dex-header">
       <h1>VisionDex</h1>
       <p id="dex-count">0 cartes enregistrées</p>
+      <div class="header-controls">
+        <input
+          type="text"
+          id="search"
+          class="search-input"
+          placeholder="Rechercher une carte..."
+        />
 
-      <input type="text" id="search" class="search-input" placeholder="Rechercher une carte..." />
-
-      <select id="filter-rarity" class="filter-select">
-        <option value="">Toutes les raretés</option>
-        <option value="Commun">Commun</option>
-        <option value="Rare">Rare</option>
-        <option value="Épique">Épique</option>
-        <option value="Légendaire">Légendaire</option>
-      </select>
+        <select id="filter-rarity" class="filter-select">
+          <option value="">Toutes les raretés</option>
+          <option value="Commun">Commun</option>
+          <option value="Rare">Rare</option>
+          <option value="Épique">Épique</option>
+          <option value="Légendaire">Légendaire</option>
+        </select>
+      </div>
     </header>
 
     <div id="gallery" class="gallery"></div>
