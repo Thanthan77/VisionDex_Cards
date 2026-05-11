@@ -19,7 +19,7 @@ body {
   background: #fdfaf4;
   border-radius: 18px;
 
-  /* Bordure extérieure réelle (capturable) */
+  /* Bordure extérieure réelle  */
   border: 7px solid var(--color);
 
   /* Glow remplacé par une ombre simple capturable */
@@ -78,9 +78,7 @@ body {
   background: rgba(255, 255, 255, 0.8);
 }
 
-/* ============================================
-   STYLE POUR EMOJI - VERSION AGRANDIE
-   ============================================ */
+/* STYLE POUR EMOJI - VERSION AGRANDIE */
 .card-image-frame {
   padding: 3px;
   border-radius: 16px;
@@ -89,7 +87,7 @@ body {
 }
 
 .card-image-inner {
-  height: 190px;  /* Augmenté de 170px à 190px */
+  height: 1750px;
   border-radius: 12px;
   border: 2px solid #ffffff;
   background: radial-gradient(circle at top, #ffffff, #d3d3d3);
@@ -99,23 +97,13 @@ body {
 }
 
 .card-emoji {
-  font-size: 130px;  /* Augmenté de 110px à 130px */
+  font-size: 100px;
   line-height: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.2));
   animation: float 3s ease-in-out infinite;
-}
-
-/* Animation flottante pour l'emoji */
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-8px);
-  }
 }
 
 /* Ajustement pour certains emojis plus fins */

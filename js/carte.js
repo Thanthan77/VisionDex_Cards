@@ -71,7 +71,7 @@ function sauvegarderDansDex(imageData) {
     type: cardData.type,
     description: cardData.description,
     attributes: cardData.attributes,
-    emoji: cardData.emoji,  // ← AJOUTÉ : sauvegarde l'emoji
+    emoji: cardData.emoji,  
     image: imageData,
   });
 
