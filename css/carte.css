@@ -87,7 +87,7 @@ body {
 }
 
 .card-image-inner {
-  height: 1750px;
+  height: 190px;
   border-radius: 12px;
   border: 2px solid #ffffff;
   background: radial-gradient(circle at top, #ffffff, #d3d3d3);
