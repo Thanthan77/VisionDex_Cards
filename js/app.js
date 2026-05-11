@@ -58,5 +58,5 @@ document.getElementById("random-card").addEventListener("click", async () => {
 });
 
 document.getElementById("open-collection").onclick = () => {
-  window.location.href = "../pages/galerie_carte.html";
+  window.location.href = "pages/galerie_carte.html";
 };
