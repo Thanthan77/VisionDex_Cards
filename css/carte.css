@@ -78,16 +78,19 @@ body {
   background: rgba(255, 255, 255, 0.8);
 }
 
+/* ============================================
+   STYLE POUR EMOJI - VERSION AGRANDIE
+   ============================================ */
 .card-image-frame {
   padding: 3px;
-  border-radius: 0;
+  border-radius: 16px;
   border: 2px solid #d8d8d8;
   background: linear-gradient(135deg, #f0f0f0, #dedede);
 }
 
 .card-image-inner {
-  height: 170px;
-  border-radius: 0;
+  height: 190px;  /* Augmenté de 170px à 190px */
+  border-radius: 12px;
   border: 2px solid #ffffff;
   background: radial-gradient(circle at top, #ffffff, #d3d3d3);
   display: flex;
@@ -95,13 +98,34 @@ body {
   align-items: center;
 }
 
-.emoji {
-  font-size: 110px;
+.card-emoji {
+  font-size: 130px;  /* Augmenté de 110px à 130px */
   line-height: 1;
-  max-height: 140px;
   display: flex;
   align-items: center;
   justify-content: center;
+  filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.2));
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Animation flottante pour l'emoji */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Ajustement pour certains emojis plus fins */
+.card-emoji[data-emoji="⚔️"],
+.card-emoji[data-emoji="🗡️"] {
+  font-size: 110px;
+}
+
+.card-emoji[data-emoji="📖"] {
+  font-size: 120px;
 }
 
 .info-box {
