@@ -1,31 +1,43 @@
+/*GLOBAL*/
 body {
   margin: 0;
   padding: 0;
-  background: #b3d9ff; /* bleu clair */
+  background: #b3d9ff;
   font-family: "Poppins", sans-serif;
+
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center;   /* 🔥 centre tout le bloc (titre + box) */
   align-items: center;
   height: 100vh;
   text-align: center;
 }
 
+/* TITRE */
 h1 {
   font-size: 32px;
   margin-bottom: 30px;
   color: #003366;
 }
 
-/* Version input qui ressemble à l'ancien textarea */
+/* CONTENEUR PRINCIPAL */
+.box {
+  background: white;
+  padding: 30px 28px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  width: 420px;
+  max-width: 90%;
+}
+
+/* INPUT */
 input {
-  width: 400px;
+  width: 90%;
   padding: 14px 18px;
-  border-radius: 10px;  /* Moins arrondi, comme l'ancien textarea */
+  border-radius: 10px;
   border: 2px solid #003366;
   font-size: 16px;
   outline: none;
-  font-family: "Poppins", sans-serif;
 }
 
 input:focus {
@@ -36,6 +48,7 @@ input::placeholder {
   color: #aaa;
 }
 
+/* BOUTONS */
 button {
   margin-top: 20px;
   padding: 12px 28px;
@@ -47,9 +60,21 @@ button {
   border-radius: 999px;
   cursor: pointer;
   transition: 0.25s ease;
+  width: 100%;
 }
 
 button:hover {
   transform: scale(1.05);
   background: #1565c0;
 }
+
+/* BOUTON SECONDAIRE */
+.secondary {
+  background: #7b8a97;
+}
+
+.secondary:hover {
+  background: #5f6b75;
+}
+
+

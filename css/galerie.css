@@ -1,6 +1,13 @@
+body {
+  background: #b3d9ff;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+}
+
 .dex-header {
   text-align: center;
   margin-bottom: 20px;
+  color: #003366
 }
 
 .gallery {

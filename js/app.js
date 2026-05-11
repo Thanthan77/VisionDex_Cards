@@ -56,3 +56,7 @@ document.getElementById("random-card").addEventListener("click", async () => {
   const encoded = encodeURIComponent(JSON.stringify(cardData));
   window.location.href = "assets/carte.html?data=" + encoded;
 });
+
+document.getElementById("open-collection").onclick = () => {
+  window.location.href = "../pages/galerie_carte.html";
+};
