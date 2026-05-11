@@ -9,10 +9,15 @@
   <body>
     <h1>Générer une Carte VisionDex</h1>
 
-    <textarea
-      id="description"
-      placeholder="Écris ici la description de ton objet..."
-    ></textarea>
+   <input
+        type="text"
+        id="description"
+        placeholder="Ex: une épée magique en cristal de glace"
+        maxlength="100"
+        pattern="[A-Za-zÀ-ÿ\s\-']+"
+        title="Seules les lettres, espaces, tirets et apostrophes sont autorisés"
+        autocomplete="off"
+      />
 
     <button id="generate">Générer la carte</button>
     <button id="random-card" class="add-btn">Générer une carte aléatoire</button>

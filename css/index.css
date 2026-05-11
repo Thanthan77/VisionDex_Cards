@@ -1,47 +1,55 @@
-    body {
-      margin: 0;
-      padding: 0;
-      background: #b3d9ff; /* bleu clair */
-      font-family: "Poppins", sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-    }
+body {
+  margin: 0;
+  padding: 0;
+  background: #b3d9ff; /* bleu clair */
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
 
-    h1 {
-      font-size: 32px;
-      margin-bottom: 30px;
-      color: #003366;
-    }
+h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #003366;
+}
 
-    textarea {
-      width: 400px;
-      height: 120px;
-      padding: 12px;
-      border-radius: 10px;
-      border: 2px solid #003366;
-      font-size: 16px;
-      resize: none;
-      outline: none;
-    }
+/* Version input qui ressemble à l'ancien textarea */
+input {
+  width: 400px;
+  padding: 14px 18px;
+  border-radius: 10px;  /* Moins arrondi, comme l'ancien textarea */
+  border: 2px solid #003366;
+  font-size: 16px;
+  outline: none;
+  font-family: "Poppins", sans-serif;
+}
 
-    button {
-      margin-top: 20px;
-      padding: 12px 28px;
-      font-size: 18px;
-      font-weight: 600;
-      background: #1e88e5;
-      color: white;
-      border: none;
-      border-radius: 999px;
-      cursor: pointer;
-      transition: 0.25s ease;
-    }
+input:focus {
+  border-color: #ff9800;
+}
 
-    button:hover {
-      transform: scale(1.05);
-      background: #1565c0;
-    }
+input::placeholder {
+  color: #aaa;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 28px;
+  font-size: 18px;
+  font-weight: 600;
+  background: #1e88e5;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: #1565c0;
+}
