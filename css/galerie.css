@@ -101,6 +101,23 @@ body {
   border-radius: 15px;
 }
 
+.home-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  text-decoration: none;
+}
+
+.home-btn svg {
+  transition: transform 0.2s ease;
+}
+
+.home-btn:hover svg {
+  transform: scale(1.15);
+}
+
+
 /* Responsive — Mobile  */
 
 @media (max-width: 768px) {
