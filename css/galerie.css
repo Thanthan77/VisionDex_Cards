@@ -114,14 +114,14 @@ body {
 
   .header-controls {
     flex-direction: column;
-    width: 95%;
+    width: 90%;
     gap: 10px;
     margin-top: 12px;
   }
 
   #search,
   #filter-rarity {
-    width: 95%;
+    width: 90%;
     font-size: 16px;
     padding: 12px 16px;
   }
