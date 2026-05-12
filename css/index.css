@@ -1,4 +1,4 @@
-/*Global*/
+/* Global */
 body {
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@ body {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;   
+  justify-content: center;
   align-items: center;
   height: 100vh;
   text-align: center;
@@ -20,7 +20,7 @@ h1 {
   color: #003366;
 }
 
-/* Conteneur Principal */
+/* Conteneur principal */
 .box {
   background: white;
   padding: 30px 28px;
@@ -77,41 +77,40 @@ button:hover {
   background: #5f6b75;
 }
 
-/*  Responsive — Mobile agrandi  */
-
+/* 📱 Responsive — Mobile agrandi */
 @media (max-width: 768px) {
 
   body {
     padding: 30px 20px;
-    height: auto;
-    justify-content: flex-start; 
+    height: auto;              
+    justify-content: flex-start;
   }
 
   h1 {
-    font-size: 34px; 
+    font-size: 34px;
     margin-bottom: 26px;
   }
 
   .box {
     width: 100%;
-    padding: 38px 30px; 
+    max-width: 100%;
+    padding: 38px 30px;
     border-radius: 20px;
   }
 
   input {
     width: 100%;
-    font-size: 20px; 
+    font-size: 20px;
     padding: 18px 22px;
   }
 
   button {
-    font-size: 22px; 
+    font-size: 22px;
     padding: 16px 30px;
   }
 }
 
-/*  Responsive — Très petits écrans */
-
+/* 📱 Responsive — Très petits écrans */
 @media (max-width: 480px) {
 
   h1 {
