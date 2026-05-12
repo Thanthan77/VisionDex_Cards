@@ -88,13 +88,13 @@ button:hover {
 
   h1 {
     font-size: 34px;
-    margin-bottom: 26px;
+    margin-bottom: 20px;
   }
 
   .box {
     width: 80%;
     max-width: 90%;
-    padding: 38px 30px;
+    padding: 35px 28px;
     border-radius: 20px;
   }
 
