@@ -225,7 +225,7 @@ body {
 
 /*  Responsive — Mobile */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
   body {
     height: auto;
@@ -271,7 +271,7 @@ body {
 
 /*  Responsive — Très petit écran */
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
 
   .card {
     width: 100%;
