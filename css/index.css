@@ -7,7 +7,7 @@ body {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;   /* 🔥 centre tout le bloc (titre + box) */
+  justify-content: center;   
   align-items: center;
   height: 100vh;
   text-align: center;
@@ -77,4 +77,54 @@ button:hover {
   background: #5f6b75;
 }
 
+/* Responsive */
 
+@media (max-width: 600px) {
+
+  body {
+    padding: 20px;
+    height: auto; /* évite les coupures sur mobile */
+  }
+
+  h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .box {
+    width: 100%;
+    padding: 22px 20px;
+  }
+
+  input {
+    width: 100%;
+    font-size: 15px;
+    padding: 12px 16px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px 22px;
+  }
+}
+
+/* Responsive — Très petit écran*/
+
+@media (max-width: 400px) {
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .box {
+    padding: 18px 16px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+}

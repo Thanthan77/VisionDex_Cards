@@ -98,3 +98,57 @@ body {
   width: 400px;
   border-radius: 15px;
 }
+
+/* Responsive — Mobile */
+
+@media (max-width: 600px) {
+
+  .dex-header h1 {
+    font-size: 26px;
+  }
+
+  .header-controls {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  #search,
+  #filter-rarity {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px 14px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fill, 120px);
+    gap: 12px;
+  }
+
+  .gallery img {
+    width: 120px;
+  }
+}
+
+/*  Responsive — Très petit écran */
+
+@media (max-width: 400px) {
+
+  .dex-header h1 {
+    font-size: 22px;
+  }
+
+  #search,
+  #filter-rarity {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .gallery img {
+    width: 100%;
+  }
+}
