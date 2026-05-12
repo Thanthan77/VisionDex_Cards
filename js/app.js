@@ -60,3 +60,7 @@ document.getElementById("random-card").addEventListener("click", async () => {
 document.getElementById("open-collection").onclick = () => {
   window.location.href = "pages/galerie_carte.html";
 };
+
+document.getElementById("description").addEventListener("input", function () {
+  this.value = this.value.replace(/[^A-Za-zÀ-ÿ\s\-']/g, "");
+});

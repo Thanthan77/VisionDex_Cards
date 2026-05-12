@@ -46,3 +46,7 @@ search.oninput = afficherDex;
 filterRarity.onchange = afficherDex;
 
 afficherDex();
+
+document.getElementById("search").addEventListener("input", function () {
+  this.value = this.value.replace(/[^A-Za-zÀ-ÿ\s\-']/g, "");
+});
