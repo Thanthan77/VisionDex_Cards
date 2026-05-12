@@ -104,7 +104,6 @@ body {
 /* Responsive — Mobile  */
 
 @media (max-width: 768px) {
-
   .dex-header h1 {
     font-size: 26px;
   }
@@ -115,14 +114,14 @@ body {
 
   .header-controls {
     flex-direction: column;
-    width: 100%;
+    width: 95%;
     gap: 10px;
     margin-top: 12px;
   }
 
   #search,
   #filter-rarity {
-    width: 100%;
+    width: 95%;
     font-size: 16px;
     padding: 12px 16px;
   }
@@ -136,7 +135,6 @@ body {
 /* Responsive — Très petit écran  */
 
 @media (max-width: 480px) {
-
   .dex-header h1 {
     font-size: 22px;
   }
