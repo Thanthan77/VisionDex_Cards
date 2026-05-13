@@ -128,3 +128,10 @@ button:hover {
     padding: 14px 26px;
   }
 }
+
+.subtitle {
+  font-size: 15px;
+  color: #35506e;
+  margin-top: -10px;
+  margin-bottom: 18px;
+}
